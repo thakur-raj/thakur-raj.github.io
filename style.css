@@ -223,7 +223,7 @@ margin-left: 9vw;
 }
 
 
- @media screen and  (min-width:451px) and (max-width:1024px)
+ @media screen and  (min-width:451px) 
  
  {
  .shift ul li {
