@@ -157,7 +157,7 @@ nav.shift ul li a:hover:after {
     top: 10%;
 }
 
-.technologies {
+.technologies,.technologiesCaption {
     display: flex;
     flex-wrap: wrap;
     animation: nudge 2s linear;
@@ -179,13 +179,7 @@ nav.shift ul li a:hover:after {
 }
 
 
-/* .technologies .interestsEnd {
-    display: flex;
-    flex-direction: row-reverse;
-     margin-left: 50vw; 
-   flex-wrap: wrap;
-     width: 50%;
-} */
+
 
 .technologies .interestsStart{
     display: flex;
@@ -221,7 +215,33 @@ width: 100%;
 margin-left: 9vw;
 }
 
+.education{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.education div .educationimage{
+    width: 300px;
+    margin-right: 5vw;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsiveness */
  @media screen and  (min-width:451px) 
  
  {
