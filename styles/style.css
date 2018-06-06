@@ -131,7 +131,7 @@ nav.shift ul li a:hover:after {
 
 .aboutMeSection .myName {
      font-family: 'Patua One',cursive;
-   color:grey;
+   color:rgba(128, 128, 128, 0.356);
     font-size: 1.2rem;
    position: relative;
    -webkit-text-stroke: 1px black;
@@ -160,7 +160,7 @@ nav.shift ul li a:hover:after {
 .technologies,.technologiesCaption {
     display: flex;
     flex-wrap: wrap;
-    animation: nudge 2s linear;
+    animation: nudge 3s linear;
     
    
 }
