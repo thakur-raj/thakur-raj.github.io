@@ -110,7 +110,7 @@ nav.shift ul li a:hover:after {
     width: 100vw;
     align-items: center;
     min-width: 50%;
-    background-image: url("/images/camouflage.jpg");
+    background-image: url("/images/camouflage-low.jpg");
     background-size: cover;
 }
 
@@ -161,6 +161,7 @@ nav.shift ul li a:hover:after {
     display: flex;
     flex-wrap: wrap;
     
+    
     /* animation: nudge 3s linear; */
     
    
@@ -198,7 +199,7 @@ nav.shift ul li a:hover:after {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: -webkit-linear-gradient(red, green);
+    background: -webkit-linear-gradient(red, orange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
       text-align: center;
@@ -220,24 +221,49 @@ width: 100%;
 margin-left: 9vw;
 }
 
-.education{
+.centerDataCol{
     display: flex;
     flex-direction: column;
-            
+    flex-wrap: wrap;
+   justify-content: flex-start;         
 }
-.education .educationimage{
+
+.centerDataCol .educationimage{
     width: 230px;
     margin-right: 5vw;
     align-self: center;
 }
 
 .edutext {
-   flex:1;
-   color: wheat;
-   margin-left: 5px;
-   align-self: center;
+    flex: 1;
+    color: wheat;
+    margin-left: 5px;
+    align-self: center;
 }
 
+.centerData {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.centerData .experienceimage {
+    width: 20vh;
+    height: 20vh;
+    margin-right: 5vw;
+   
+   
+   
+}
+
+.experiencetext {
+    color: wheat;
+    margin-left: 5px;
+    
+}
 
 
 
@@ -291,6 +317,7 @@ height: 250PX;
         flex-wrap: wrap;
         padding-left: 5vw;
         padding-right: 5vw;
+       
     }
 
   .topnavbar{
@@ -305,10 +332,11 @@ height: 250PX;
     }
 
 
-    .skilltext,.boldText{
+    .skilltext{
         display: none;
       
        width: 300px;
+        border: 5px solid red;
     }
 
     .resize{
