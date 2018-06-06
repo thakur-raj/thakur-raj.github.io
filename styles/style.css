@@ -206,6 +206,7 @@ nav.shift ul li a:hover:after {
     flex:1;
     color: wheat;
     margin-left: 5px;
+    align-self: center;
 }
 
 
@@ -217,13 +218,22 @@ margin-left: 9vw;
 
 .education{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+            
 }
-.education div .educationimage{
-    width: 300px;
+.education .educationimage{
+    width: 230px;
     margin-right: 5vw;
+    align-self: center;
 }
+
+.edutext {
+   flex:1;
+   color: wheat;
+   margin-left: 5px;
+   align-self: center;
+}
+
 
 
 
@@ -303,6 +313,15 @@ height: 250PX;
   width: 20vw;
  width: 60%;
     }
+
+   
+ .educationimage{
+    display: none;
+} 
+
+.edutext{
+    color: wheat;
+}
 
 }
 
