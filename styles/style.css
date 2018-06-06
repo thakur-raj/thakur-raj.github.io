@@ -157,16 +157,17 @@ nav.shift ul li a:hover:after {
     top: 10%;
 }
 
-.technologies,.technologiesCaption {
+.technologies {
     display: flex;
     flex-wrap: wrap;
-    animation: nudge 3s linear;
+    
+    /* animation: nudge 3s linear; */
     
    
 }
 
 
-@keyframes nudge {
+/* @keyframes nudge {
     0%{
         transform: scale(2);
     }
@@ -176,7 +177,7 @@ nav.shift ul li a:hover:after {
     }
 
     
-}
+} */
 
 
 
@@ -184,20 +185,23 @@ nav.shift ul li a:hover:after {
 .technologies .interestsStart{
     display: flex;
     flex-direction: row;
-    /* margin-right: 50vw; */
     flex-wrap: wrap;
     width: 50%;
+    
 }
 
 
-.boldText{
-    font-size: 2rem;
+
+
+.boldText {
+    font-size:2rem;
     width: 100%;
     margin: 0;
     padding: 0;
-    color: #aaa;
-    
-    text-align: center;
+    background: -webkit-linear-gradient(red, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      text-align: center;
 }
 
 

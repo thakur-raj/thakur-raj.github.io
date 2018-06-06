@@ -1,17 +1,14 @@
-<!-- rakj thakur -->
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>My Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Patua+One" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"> -->
-
-
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
-    <script type "text/Javascript" src="/scripts/script.js"></script>
+    
 </head>
 
 <body>
@@ -47,7 +44,7 @@
 
         <!-- Profile Pic and Name -->
         <section id="aboutMeSection" class="aboutMeSection">
-            <img src="images/rajthakur-low.jpg" alt="Profile Photo" class="profilePic">
+<img src="images/rajthakur-low.jpg" alt="Profile Photo" class="profilePic" data-aos="flip-right" data-aos-duration="1300">
 
             <div class="myName">
                 <h1>Raj Thakur</h1>
@@ -67,16 +64,17 @@
             left in stock ).
         </div>
 
-        <!-- Technologies Caption -->
-        <div style=" text-align: justify;width: 100vw">
-            <h1 id: "interests" style=" text-align: center">Technologies I Know</h1>
-        </div>
+        
 
         <!-- Technologies-->
         <div class="technologies" id="technologies">
+<!-- Technologies Caption -->
+<div style=" text-align: justify;width: 100vw">
+    <h1 id: "interests" style=" text-align: center">Technologies I Know</h1>
+</div>
             <!-- HTML Technology -->
-            <div class="interestsStart">
-                <h2 class="boldtext">HTML</h2>
+<div class="interestsStart" data-aos="flip-up" data-aos-duration="800">
+                <div class="boldText">HTML</div>
                 <div>
                     <img src="icons/html.png" class="resize">
                 </div>
@@ -89,8 +87,8 @@
             </div>
 
             <!-- CSS Technology -->
-            <div class="interestsStart ">
-                <h2 class="boldtext">CSS</h2>
+<div class="interestsStart " data-aos="flip-up" data-aos-duration="800">
+                <h2 class="boldText">CSS</h2>
                 <div>
                     <img src="icons/CSS.png" class="resize">
                 </div>
@@ -102,8 +100,8 @@
             </div>
 
             <!-- JS Technology -->
-            <div class="interestsStart">
-                <h2 class="boldtext">Javascript</h2>
+<div class="interestsStart" data-aos="flip-up" data-aos-duration="800">
+                <h2 class="boldText">Javascript</h2>
                 <div>
                     <img src="icons/js.png" class="resize">
                 </div>
@@ -114,8 +112,8 @@
                     enables interactive web pages and thus is an essential part of web applications.</div>
             </div>
             <!-- JAVA Technology -->
-            <div class="interestsStart">
-                <h2 class="boldtext">Java</h2>
+<div class="interestsStart" data-aos="flip-up" data-aos-duration="800">
+                <h2 class="boldText">Java</h2>
                 <div>
                     <img src="icons/java.png" class="resize">
                 </div>
@@ -128,8 +126,8 @@
             </div>
 
             <!-- Python Technology -->
-            <div class="interestsStart">
-                <h2 class="boldtext">Python</h2>
+<div class="interestsStart" data-aos="flip-up" data-aos-duration="800">
+                <h2 class="boldText">Python</h2>
                 <div>
                     <img src="icons/python.png" class="resize">
                 </div>
@@ -142,8 +140,8 @@
             </div>
 
             <!-- MEAN Stack Technology -->
-            <div class="interestsStart">
-                <h2 class="boldtext">Learning-MEAN Stack</h2>
+<div class="interestsStart" data-aos="flip-up" data-aos-duration="800">
+                <h2 class="boldText">Learning-MEAN Stack</h2>
                 <div>
                     <img src="icons/mean.jpg" class="resize">
                 </div>
@@ -157,8 +155,9 @@
         </div>
 
         <!-- Education -->
-        <div style=" text-align: justify;width: 100vw">
-            <h1 id: "interests" style=" text-align: center">My Education</h1>
+<div style="width: 100vw " data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+            
+            <h2 class="boldText" id="education" style=" text-align: center">My Education</h2>
 
             <div class="education" id="education">
                
@@ -179,6 +178,11 @@
 
         </div>
         <!-- Container class close -->
-</body>
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script type="text/javascript">
+AOS.init();
+</script>
+    </body>
 
 </html>
