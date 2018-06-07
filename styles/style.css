@@ -112,6 +112,8 @@ nav.shift ul li a:hover:after {
     min-width: 50%;
     background-image: url("/images/camouflage-low.jpg");
     background-size: cover;
+    
+    
 }
 
 
@@ -254,6 +256,7 @@ margin-left: 9vw;
     width: 20vh;
     height: 20vh;
     margin-right: 5vw;
+    flex-wrap: wrap;
    
    
    
@@ -269,9 +272,25 @@ margin-left: 9vw;
 
 
 
+.contactme{
+    display: flex;
+    background: black;
+    width: 100%;
+    color: lime;
+    flex-wrap: wrap;
+    border: 1px dashed green;
+    align-items: center;
+
+}
 
 
-
+.contactimage {
+    height: 7vw;
+    width: 7vw;
+    margin-left: 2vw;
+    left: 9%;
+    top: 10%;
+}
 
 
 
@@ -320,15 +339,15 @@ height: 250PX;
        
     }
 
-  .topnavbar{
+  .topnavbar li:not(.different) {
       display: none;
   }
 
     .aboutMeSection .profilePic {
         border: 2px solid green;
         border-radius: 0px;
-        width: 60%;
-        height: 60%;
+        width: 40%;
+        height: 40%;
     }
 
 
