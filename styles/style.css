@@ -20,11 +20,13 @@ body {
     flex-wrap: wrap;
 }
 
-/* NAVIGATION */
+
 
 .topnavbar{
     display: flex;
 width: 100%;
+ 
+ 
 }
 
 nav {
@@ -65,7 +67,7 @@ nav ul li a:hover {
     color: #555;
 }
 
-/* SHIFT */
+
 
 
 
@@ -106,13 +108,14 @@ nav.shift ul li a:hover:after {
 
 .aboutMeSection {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100vw;
     align-items: center;
     min-width: 50%;
-    background-image: url("/images/camouflage-low.jpg");
+    background-image: url("https://media.giphy.com/media/l3q2Cy90VMhfoA9BC/giphy.gif");
     background-size: cover;
-    
+  position: relative;
     
 }
 
@@ -138,6 +141,7 @@ nav.shift ul li a:hover:after {
    position: relative;
    -webkit-text-stroke: 1px black;
    padding: 15px;
+   margin: 2px;
    
    
  }
@@ -274,19 +278,21 @@ margin-left: 9vw;
 
 .contactme{
     display: flex;
+    flex-wrap: wrap;
     background: black;
     width: 100%;
     color: lime;
     flex-wrap: wrap;
     border: 1px dashed green;
     align-items: center;
+    justify-content: space-around;
 
 }
 
 
 .contactimage {
-    height: 7vw;
-    width: 7vw;
+    height: 60px;
+    width: 60px;
     margin-left: 2vw;
     left: 9%;
     top: 10%;
@@ -336,6 +342,7 @@ height: 250PX;
         flex-wrap: wrap;
         padding-left: 5vw;
         padding-right: 5vw;
+        
        
     }
 
@@ -348,6 +355,10 @@ height: 250PX;
         border-radius: 0px;
         width: 40%;
         height: 40%;
+    }
+
+    .aboutMeSection .myName{
+        margin:15px 15px 15px 15px
     }
 
 
@@ -374,5 +385,9 @@ height: 250PX;
     color: wheat;
 }
 
+
+.contactme{
+    flex-direction: column;
+}
 }
 
