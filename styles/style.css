@@ -7,7 +7,7 @@ body {
     padding: 0;
     
     margin: 0;
-     background-image: url("/images/greenbackground-low.jpg");
+     background-image: url("../images/greenbackground-low.jpg");
      background-size: cover;
     
          overflow-x: hidden;
@@ -113,9 +113,9 @@ nav.shift ul li a:hover:after {
     width: 100vw;
     align-items: center;
     min-width: 50%;
-    background-image: url("https://media.giphy.com/media/l3q2Cy90VMhfoA9BC/giphy.gif");
     background-size: cover;
   position: relative;
+    background-image: url("../images/camouflage-low.jpg");
     
 }
 
