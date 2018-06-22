@@ -1,0 +1,41 @@
+html,
+body {
+    height: 100%;
+}
+
+#innerDiv {
+    height: calc(100% - 57px);
+    border-left: 0.5px solid grey;
+    border-right: 0.5px solid grey;
+    border-bottom: 0.1px solid grey;
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: 1px solid gray; */
+}
+
+.chatTime{
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+}
+
+#recentUpdates{
+    background-color:honeydew;
+    color: #28A745;
+}
+
+
+.product-holder {
+    position: relative;
+    display: block;
+}
+
+.plus-image {
+    left: 60%;
+    top: 90%;
+    position: absolute;
+    
+}
