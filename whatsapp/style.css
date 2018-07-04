@@ -140,3 +140,15 @@ justify-content: center;
         height: 80px;
         width: 80px;
     }
+
+
+    @media(max-width:991px) {
+        .navbar-nav>li {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
