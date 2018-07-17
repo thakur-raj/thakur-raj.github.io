@@ -15,14 +15,13 @@ $(document).ready(function () {
 
 
     $("#searchBtn").click(function (e) {
-
-
-        loadMovieData();
-
-
-
-
+        loadMovieData(e);
     });
+
+    $("#quickSearchBtn").click(function (e) {
+        loadMovieData(e);
+    });
+
 
 
 
@@ -32,25 +31,35 @@ $(document).ready(function () {
 
 
 
-let loadMovieData = () => {
+let loadMovieData = (e) => {
 
+    let movieTitle;
+
+    //which button was clicked "QuickTitleSearch" or "Search"
+    let idClicked = e.target.id;
     
 
-    let movieTitle = $("#title").val();
+    if (idClicked == "searchBtn")
+        movieTitle = $("#title").val();
+
+    if (idClicked == "quickSearchBtn")
+        movieTitle = $("#quickSearchTitle").val();
+    
+
     let movieYear = $("#year").val();
     let movieId = $("#id").val();
     let info = `Title:${movieTitle} Year:${movieYear} ID:${movieId}`;
-   
+
 
     let baseURL = `https://www.omdbapi.com/?`;
     let apiURL = `https://www.omdbapi.com/?`;
     let apiKey = `&apikey=d7ed4877`;
-    
+
 
 
     if (movieTitle != '' && movieTitle != 'undefined' && movieTitle != null) {
-        apiURL=apiURL.concat(`&t=${movieTitle}`);
-      
+        apiURL = apiURL.concat(`&t=${movieTitle}`);
+
     }
 
     if (movieYear != '' && movieYear != 'undefined' && movieYear != null) {
@@ -59,12 +68,12 @@ let loadMovieData = () => {
 
     if (movieId != '' && movieId != 'undefined' && movieId != null) {
         baseURL = baseURL.concat(`&i=${movieId}`);
-        apiURL=baseURL;
+        apiURL = baseURL;
 
     }
 
 
-    apiURL=apiURL.concat(apiKey);
+    apiURL = apiURL.concat(apiKey);
     console.log("Hitting Api : " + apiURL);
 
 
@@ -76,21 +85,21 @@ let loadMovieData = () => {
         dataType: "json",
         success: function (data) {
 
-            let response=data.Response;
-            console.log("Response Returned: "+response);
+            let response = data.Response;
+            console.log("Response Returned: " + response);
             let responseData;
-            
-            if (response=="True"){
+
+            if (response == "True") {
 
                 let poster;
 
-                if (data.Poster!="N/A")
-                poster=data.Poster;
+                if (data.Poster != "N/A")
+                    poster = data.Poster;
                 else
-                    poster="images/brand.jpg";
+                    poster = "images/brand.jpg";
 
 
-            responseData =`
+                responseData = `
                         <tr><td colspan="2" style="text-align: center;"><img src="${poster}" height="200px"></td></tr>
                         <tr><td>Title</td><td>${data.Title}</td></tr>
                         <tr><td>Year</td><td>${data.Year}</td></tr>
@@ -101,13 +110,10 @@ let loadMovieData = () => {
                         <tr><td>Genre</td><td>${data.Genre}</td></tr>
                         <tr><td>Director</td><td>${data.Director}</td></tr>
                         <tr><td>Actors</td><td>${data.Actors}</td></tr>
-                        
-                       <tr><td>imdbRating</td><td>2.9</td></tr>
+                        <tr><td>imdbRating</td><td>${data.imdbRating}</td></tr>
                        `;
-            }
-            else if (response == "False")
-            {
-                responseData =`<tr><td colspan="2" style="text-align: center;">Sorry No Result Found</td></tr>`;
+            } else if (response == "False") {
+                responseData = `<tr><td colspan="2" style="text-align: center;">Sorry No Result Found</td></tr>`;
             }
 
 
@@ -116,7 +122,7 @@ let loadMovieData = () => {
 
         },
         error: function (response) {
-            alert("Something is wrong "+response);
+            alert("Something is wrong " + response);
         },
         timeout: 3000,
 

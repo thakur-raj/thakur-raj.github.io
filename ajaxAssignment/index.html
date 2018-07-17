@@ -40,8 +40,9 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Quick Title Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="quickSearchTitle">
+                    <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="quickSearchBtn">Quick Title Search</button> -->
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="#result" role="button" id="quickSearchBtn">Quick Title Search</a>
                 </form>
             </div>
         </nav>
@@ -84,20 +85,22 @@
                     <input type="text" class="form-control" placeholder="Imdb Id" aria-label="Imdb Id" aria-describedby="basic-addon1" id="id">
                 </div>
 
+
                 <p class="lead text-center">
-                    <a class="btn btn-primary btn-lg" href="#" role="button" id="searchBtn">Search</a>
+                    <a class="btn btn-primary btn-lg" href="#result" role="button" id="searchBtn">Search</a>
                 </p>
 
 
+                <div id="result">
+                    <table class="table table-dark">
+                        <thead>
 
-                <table class="table table-dark">
-                    <thead>
-                   
-                    </thead>
-                    <tbody id="infoTable">
-                       
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody id="infoTable">
+
+                        </tbody>
+                    </table>
+                </div>
 
 
             </div>
