@@ -96,7 +96,7 @@ let loadMovieData = (e) => {
                 if (data.Poster != "N/A")
                     poster = data.Poster;
                 else
-                    poster = "images/brand.jpg";
+                    poster = "images/Sorry-image-not-available.png";
 
 
                 responseData = `
