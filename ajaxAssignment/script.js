@@ -42,8 +42,8 @@ let loadMovieData = () => {
     let info = `Title:${movieTitle} Year:${movieYear} ID:${movieId}`;
    
 
-    let baseURL = `http://www.omdbapi.com/?`;
-    let apiURL = `http://www.omdbapi.com/?`;
+    let baseURL = `https://www.omdbapi.com/?`;
+    let apiURL = `https://www.omdbapi.com/?`;
     let apiKey = `&apikey=d7ed4877`;
     
 
