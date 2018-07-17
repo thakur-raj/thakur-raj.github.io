@@ -1,0 +1,154 @@
+
+html,body {
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+   
+}
+
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 20px;
+     /* border: 1px solid gray;  */
+}
+
+
+
+#recentUpdates{
+    background-color:honeydew;
+    color: #28A745;
+}
+
+.underLine{
+    border-bottom: 1px solid rgba(215, 223, 234, 0.6);
+}
+
+
+/* .giveBorder
+{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #28A745;
+    font-size: 28px;
+} */
+.unread{
+    color:#28A745;
+}
+
+
+.callIcon{
+    display: flex;
+color: #28A745;
+align-items: center;
+justify-content: center;
+
+}
+
+.counter {
+    position: relative;
+    display: inline;
+    /* border: 1px solid red; */
+
+}
+
+.over {
+    position: absolute;
+    left:70px;
+    top: 40px;
+  
+}
+
+
+.navbar-nav>li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width:575px){
+
+    .contactName{
+        text-align: center;
+        
+    }
+
+  
+}
+
+
+.roundButton {
+    
+        border-radius: 50%;
+  
+}
+
+.footer{
+  display:flex;
+ flex-wrap: wrap;
+ margin-top: 20px;
+
+
+}
+
+#messageBox{
+   flex:1;
+   
+      
+}
+
+#sendBox{
+    margin-left: 15px;
+    }
+
+    a:link {
+        color:black;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+   
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+               color: white;
+        text-align: center;
+    }
+
+
+    .me {
+        font-size: 14px;
+        margin: -4px;
+        border-right: 3px solid #60DF88 !important;
+        padding: 5px;
+        background-color: rgb(239, 255, 241);
+    }
+
+    .you {
+        font-size: 14px;
+        margin: -4px;
+        border-left: 3px solid rgb(255, 112, 0) !important;
+        padding: 5px;
+        padding-left: 10px;
+        background-color: rgb(247, 247, 214);
+    }
+
+    .chatMessage{
+        height: 80px;
+        width: 80px;
+    }
+
+
+    @media(max-width:991px) {
+        .navbar-nav>li {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }

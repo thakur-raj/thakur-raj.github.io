@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Top Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> Whatsapp
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Chats
+                        <div class="badge badge-pill badge-secondary badge-block">10</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="status.html">Status</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calls.html">Calls</a>
+                </li>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        More
+    </a>
+    <div class="dropdown-menu" id="moreOptions">
+        <a class="dropdown-item disabled" href="#">New group</a>
+        <a class="dropdown-item disabled" href="#">New broadcast</a>
+        <a class="dropdown-item disabled" href="#">WhatsApp Web</a>
+        <a class="dropdown-item disabled" href="#">Starred messages</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="profilePage.html">Settings</a>
+    </div>
+</li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0 mr-sm-2" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+    <!-- TopNavbar closed -->
+
+    <div class="container-fluid mt-10" id="innerDiv">
+
+        <div class="row">
+            <div class="col-sm-2 counter">
+                <img src="images/ash.jpg" width="70" height="70" alt="" class="rounded-circle ">
+                <img src="images/plus.jpeg" width="30" height="30" alt="" class="rounded-circle over">
+            </div>
+            <div class="col-sm-10 chat contactName">
+                <strong>My Status</strong>
+                <div class="text text-muted">Tap to add status update</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12" id="recentUpdates">
+                <strong>Recent updates</strong>
+            </div>
+        </div>
+
+        <!-- ------------------------------------Pikachu------------------------------------------------------- -->
+
+        <div class="row underLine">
+            <div class="col-sm-1 d contactPic" style=" text-align: center; ">
+                <img src="images/pikachu.png" width="40" height="40" alt="" class="rounded-circle border border-success">
+            </div>
+            <div class="col-sm-9 offset-sm-1 chat contactName">
+                <strong>Pikachu</strong>
+                <div class="text text-muted">4 minutes ago</div>
+            </div>
+
+        </div>
+        <!-- --------------------------------Bulbasaur------------------------------------------------------------ -->
+        <div class="row underLine">
+            <div class="col-sm-1 d contactPic" style=" text-align: center; ">
+                <img src="images/bulbasaur.jpg" width="40" height="40" alt="" class="rounded-circle border border-success">
+            </div>
+            <div class="col-sm-9 offset-sm-1 chat contactName">
+                <strong>Bulbasaur</strong>
+                <div class="text text-muted">14 minutes ago</div>
+            </div>
+
+        </div>
+        <!-- --------------------------------Squirtle------------------------------------------------------------ -->
+        <div class="row underLine">
+            <div class="col-sm-1 d contactPic" style=" text-align: center; ">
+                <img src="images/squirtle.png" width="40" height="40" alt="" class="rounded-circle border border-success">
+            </div>
+            <div class="col-sm-9 offset-sm-1 chat contactName">
+                <strong>Squirtle</strong>
+                <div class="text text-muted">Today 5:40 PM</div>
+            </div>
+
+        </div>
+
+
+        <!-- ------------------------------------Jigglypuff------------------------------------------------------- -->
+
+        <div class="row underLine">
+            <div class="col-sm-1 d contactPic" style=" text-align: center; ">
+                <img src="images/jigglypuff.png" width="40" height="40" alt="" class="rounded-circle border border-success">
+            </div>
+            <div class="col-sm-9 offset-sm-1 chat contactName">
+                <strong>Jigglypuff</strong>
+                <div class="text text-muted">34 minutes ago</div>
+            </div>
+
+        </div>
+        <!-- --------------------------------Heracross------------------------------------------------------------ -->
+        <div class="row underLine">
+            <div class="col-sm-1 d contactPic" style=" text-align: center; ">
+                <img src="images/heracross.png" width="40" height="40" alt="" class="rounded-circle border border-success">
+            </div>
+            <div class="col-sm-9 offset-sm-1 chat contactName">
+                <strong>Heracross</strong>
+                <div class="text text-muted">Today 2:40 PM</div>
+            </div>
+
+        </div>
+        <!-- --------------------------------Pidgetto------------------------------------------------------------ -->
+        <div class="row underLine">
+            <div class="col-sm-1 d contactPic" style=" text-align: center; ">
+                <img src="images/pidgeotto.jpg" width="40" height="40" alt="" class="rounded-circle border border-success">
+            </div>
+            <div class="col-sm-9 offset-sm-1 chat contactName">
+                <strong>Pidgeotto</strong>
+                <div class="text text-muted">Today 7:10 AM</div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <!-- All script tags go beyond this point -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

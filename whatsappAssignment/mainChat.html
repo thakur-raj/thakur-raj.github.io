@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body style="background-color: yellowgreen;">
+
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-success fixed-top">
+        <a class="navbar-brand" href="index.html">
+
+            <i class="fa fa-arrow-left"></i>
+            <img src="images/pikachu.png" width="30" height="30" class="d-inline-block align-top" alt="" class="rounded-circle">Pikachu
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">
+                        <i class="material-icons">videocam</i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="material-icons">local_phone</i>
+                    </a>
+
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="material-icons">dashboard</i>
+                    </a>
+                    <div class="dropdown-menu" id="moreOptions">
+                        <a class="dropdown-item disabled" href="#">View contact</a>
+                        <a class="dropdown-item disabled" href="#">Media</a>
+                        <a class="dropdown-item disabled" href="#">Mute notifications</a>
+                        <a class="dropdown-item disabled" href="#">Wallpaper</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item disabled" href="#">More</a>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
+
+    <div class="container" style="padding-bottom: 100px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="me pull-right">Hi Pikachu</blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="me pull-right">How are you ?</blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="you pull-left">Hello Raj, Im doing great. What about you ?</blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="me pull-right">Ready for today's match.</blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="you pull-left">Yup I am !</blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="me pull-right">Seems you have a match @ 3pm.</blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="you pull-left">Oops. I have a date with Raichu at that time!</blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="you pull-left">Can we make it @ 5pm</blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="me pull-right">Let me check that with brock.ill get back to you soon.</blockquote>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="me pull-right">
+                        <img src="images/jigglypuff.png" alt="" class="chatMessage">
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div>
+                    <blockquote class="you pull-left">Ahhh! She is cute.</blockquote>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div id="messageBox">
+
+            <input class="form-control" type="text" placeholder="Type a message..." aria-label="Search">
+
+        </div>
+        <div id="sendBox">
+            <a href="#">
+                <i class="material-icons">send</i>
+            </a>
+            <a href="#">
+                <i class="material-icons">mic</i>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- All script tags go beyond this point -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
