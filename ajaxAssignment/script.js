@@ -116,7 +116,7 @@ let loadMovieData = () => {
 
         },
         error: function (response) {
-            alert("Something is wrong");
+            alert("Something is wrong "+response);
         },
         timeout: 3000,
 
