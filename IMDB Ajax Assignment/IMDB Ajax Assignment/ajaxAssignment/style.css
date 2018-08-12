@@ -1,0 +1,12 @@
+
+
+
+body{
+    background: url("images/film-background.jpg");
+     background-size: cover;
+}
+
+.input-group-text{
+width: 100px;
+
+}
