@@ -53,7 +53,7 @@ let loadMovieData = (e) => {
 
     let baseURL = `https://www.omdbapi.com/?`;
     let apiURL = `https://www.omdbapi.com/?`;
-    let apiKey = `&apikey=d7ed4877`;
+    let apiKey = `&apikey=e411cdc6`;
 
 
 
