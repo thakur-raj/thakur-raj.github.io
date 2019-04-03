@@ -8,22 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
-
     <div class="container-bg">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">
-                <img src="images/brand.jpg" width="30" height="30" class="d-inline-block align-top" alt="Brand"> IMDB Movie Finder
+                <img src="images/brand.jpg" width="30" height="30" class="d-inline-block align-top" alt="Brand"> IMDB
+                Movie Finder
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -40,9 +38,11 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="quickSearchTitle">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                        id="quickSearchTitle">
                     <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="quickSearchBtn">Quick Title Search</button> -->
-                    <a class="btn btn-outline-success my-2 my-sm-0" href="#result" role="button" id="quickSearchBtn">Quick Title Search</a>
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="#result" role="button"
+                        id="quickSearchBtn">Quick Title Search</a>
                 </form>
             </div>
         </nav>
@@ -51,22 +51,20 @@
         <div class="container">
             <div class="jumbotron">
                 <h1 class="display-4">Hello, Welcome to IMDB Movie Finder!</h1>
-                <p class="lead">This is a simple web application to find information about movies by By Imdb Id or title or year.</p>
+                <p class="lead">This is a simple web application to find information about movies by By Imdb Id or title
+                    or year.</p>
                 <p class="text-muted">-Made with Love by Raj Thakur</p>
                 <hr class="my-4">
-                <p>It uses the following open url
+                <!-- <p>It uses the following open url
                     <a href="http://www.omdbapi.com/">http://www.omdbapi.com/</a>
-                </p>
-
-
-
-
+                </p> -->
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Title</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Title" aria-label="Title" aria-describedby="basic-addon1" id="title">
+                    <input type="text" class="form-control" placeholder="Title" aria-label="Title"
+                        aria-describedby="basic-addon1" id="title">
                 </div>
 
 
@@ -74,15 +72,16 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon2">Year</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Year" aria-label="Year" aria-describedby="basic-addon1" id="year" onkeypress="return isNumberKey(event)"
-                        maxlength="4">
+                    <input type="text" class="form-control" placeholder="Year" aria-label="Year"
+                        aria-describedby="basic-addon1" id="year" onkeypress="return isNumberKey(event)" maxlength="4">
                 </div>
 
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon3">Imdb Id</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Imdb Id" aria-label="Imdb Id" aria-describedby="basic-addon1" id="id">
+                    <input type="text" class="form-control" placeholder="Imdb Id" aria-label="Imdb Id"
+                        aria-describedby="basic-addon1" id="id">
                 </div>
 
 
@@ -106,27 +105,15 @@
             </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
         <script src="script.js"></script>
 </body>
 
