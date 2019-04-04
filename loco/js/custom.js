@@ -4,7 +4,10 @@ $(document).ready(function () {
 
         $(this).addClass('active');
     })
-
+    $('.navbar').css({
+        'margin-top': '-100px',
+        'opacity': '0'
+    });
 
     $(window).scroll(function () {
         'use strct'
